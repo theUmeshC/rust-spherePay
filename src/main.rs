@@ -82,7 +82,7 @@ async fn main() {
             .post(url)
             .header(
                 "Authorization",
-                "Bearer secret_98de6e5ed41a404ba0816bf0d10572ad",
+                "Bearer ",
             )
             .json(&serde_json::json!({
                 "type": "individual",
@@ -179,7 +179,7 @@ async fn main() {
             .post(url)
             .header(
                 AUTHORIZATION,
-                "Bearer secret_98de6e5ed41a404ba0816bf0d10572ad",
+                "Bearer ",
             )
             .multipart(form)
             .send()
@@ -219,7 +219,7 @@ async fn main() {
     //     );
     //     let resp = client
     //         .post(url)
-    //         .header("Authorization", "Bearer secret_98de6e5ed41a404ba0816bf0d10572ad")
+    //         .header("Authorization", "Bearer ")
     //         .multipart(form)
     //         .send()
     //         .await?;
